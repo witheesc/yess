@@ -1,0 +1,11 @@
+      .pos 0
+      irmovq list, %rdi
+      mrmovq 0(%rdi), %rax
+
+
+      .align 8
+list: .quad -2            #at end: 2
+      .quad 5             #at end: 5 
+      .quad -15           #at end: f
+      .quad 0             #at end: 0
+      .quad -1            #at end: 1
